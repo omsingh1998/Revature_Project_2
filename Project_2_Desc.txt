@@ -1,3 +1,4 @@
+
 To Transfer File from Local machine to Sandbox:
 
 scp -P 2222 ./airlines.csv  maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev/Project_2
