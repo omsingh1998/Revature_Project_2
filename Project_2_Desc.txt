@@ -1,0 +1,12 @@
+To Transfer File from Local machine to Sandbox:
+
+scp -P 2222 ./airlines.csv  maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev/Project_2
+scp -P 2222 ./airports.csv  maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev/Project_2
+scp -P 2222 ./flights.csv  maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev/Project_2
+
+To move file on hdfs:
+
+hdfs dfs -copyFromLocal ./flights.csv /user/maria_dev/Project_2 
+hdfs dfs -copyFromLocal ./airlines.csv /user/maria_dev/Project_2 
+hdfs dfs -copyFromLocal ./airports.csv /user/maria_dev/Project_2 
+
